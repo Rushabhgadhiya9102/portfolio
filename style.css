@@ -6,7 +6,11 @@
 }
 
 body{
-  background-color: black;
+  background-image: url('./image/portfolio-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /*------------------ N A V B A R -------------*/
@@ -16,16 +20,20 @@ header{
   width: 100%;
   z-index: 10;
   top: 0;
+  backdrop-filter: blur(50px);
+  background-image: url('./image/portfolio-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .navbar{
   display: flex;
-  color: cyan;
+  color: white;
   justify-content: space-around;
   align-items: center;
   height: 50px;
   font-size: larger;
-  background-color: black;
 }
 
 #navigation{
@@ -36,7 +44,8 @@ header{
 
 #navigation>a{
   text-decoration: none;
-  color: cyan;
+  color: white;
+  font-weight: bold;
   text-transform: capitalize;
 }
 
@@ -50,23 +59,26 @@ header{
 }
 .banner{
   display: flex;
-  border: 1px solid cyan;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
 }
 
 .banner>img{
-  width: 690px;
-  height: 690px;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
 }
 
 #banner-content{
-  width: 700px;
+  width: 500px;
   color: white;
   font-size: xx-large;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-transform: capitalize;
+  
 }
 /*-------------- A B O U T _ M E -----------*/
 
@@ -77,14 +89,19 @@ header{
   display: flex;
   text-align: center;
   justify-content: center;
-  margin: 30% 0%;
 }
 
 #about-content{
-  border: 1px solid cyan;
+  
+  background-color: rgba(0, 0, 0, 0.204);
   padding: 40px;
   width: 800px;
   height: 500px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #about-content>h1{
@@ -98,23 +115,31 @@ header{
   display: flex;
   justify-content: center;
   font-size: x-large;
-  color: aquamarine;
+  color: white;
 }
 
 .projects{
   margin: 10% 0%;
   width: 100%;
-  height: auto;
-  border: 1px solid cyan;
+  height: auto; 
   color: white;
   text-transform: capitalize;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 #project-1{
-  border: 1px solid cyan;
+  backdrop-filter: blur(50px);
+  border-radius: 20px;
   display: flex;
+  width: 90%;
   justify-content: space-around;
+  padding: 20px;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.204);
 }
 
 #project-1>img{
