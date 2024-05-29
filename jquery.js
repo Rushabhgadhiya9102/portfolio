@@ -4,8 +4,9 @@ $(function() {
     });
   })
   
+// crousal - content
 
-  $('.slider-single').slick({
+  $('.slide-show').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
@@ -13,10 +14,12 @@ $(function() {
     asNavFor: '.slider-nav'
   });
   $('.slider-nav').slick({
+    arrows:false,
     slidesToShow: 3,
     slidesToScroll: 1,
-    asNavFor: '.slider-for',
+    asNavFor: '.slide-show',
     dots: true,
     centerMode: true,
-    focusOnSelect: true
-  });
+    focusOnSelect: true,
+    autoplay: true,
+  });       
