@@ -13,22 +13,14 @@ body{
   background-attachment: fixed;
 }
 
-.slider-nav{
-  width: 100%;
-  height: 400px;
-  border: 1px solid #000;
+.slider-nav img{
+  border-radius: 20px;
+  padding: 0px 10px;
 }
-
-.slider-nav>img{
-  width: 400px;
-  height: 400px;
-}
-
 
 .slide-show{
   display: flex;
-  justify-content: center;
-  border: 1px solid #000; 
+  padding-left: 350px;
 }
 /*------------------ N A V B A R -------------*/
 
@@ -102,7 +94,7 @@ header{
 .about_me{
   color: white;
   width: 100%;
-  height: 500px;
+  height: 100vh;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -128,11 +120,13 @@ header{
 
 /* ------------- P R O J E C T S --------------- */
 
-.heading{
+.projects-heading{
   display: flex;
   justify-content: center;
   font-size: x-large;
   color: white;
+  margin-bottom: 30px;
+  text-transform: capitalize;
 }
 
 .projects{
@@ -152,16 +146,16 @@ header{
   backdrop-filter: blur(50px);
   border-radius: 20px;
   display: flex;
-  width: 90%;
+  padding: 30px;
+  width: 70%;
   justify-content: space-around;
-  padding: 20px;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.204);
 }
 
 #project-1>img{
-  width: 500px;
-  height: 300px;
+  width: 450px;
+  height: 250px;
   border-radius: 20px;
 }
 
@@ -169,8 +163,10 @@ header{
   width: 400px;
   height: 400px;
   display: flex;
+  padding: 20px;
   flex-direction: column;
   justify-content: center;
+  color: white;
 }
 
 /* -------- P A R T I C L E S -------- */
