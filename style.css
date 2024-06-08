@@ -177,3 +177,59 @@ header{
   position: fixed;
   z-index: -1;
 }
+
+/* -------------- L A N G U A G E S ---------------- */
+
+#languages-wrapper{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  text-transform: capitalize;
+  color: white;
+}
+
+.main-language-container{
+  width: 90%;
+  height: auto;
+  flex-wrap: wrap;
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-evenly;
+}
+
+.about-languages{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.204);
+}
+
+.common-languages{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 200px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.204);
+}
+
+.common-languages>img{
+  width: 400px;
+  height: 150px;
+}
+
+.about-languages>img{
+  width: 100px;
+  height: 100px;
+}
