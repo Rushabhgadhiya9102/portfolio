@@ -21,5 +21,4 @@ $(function() {
     dots: true,
     centerMode: true,
     focusOnSelect: true,
-    autoplay: true,
   });       
